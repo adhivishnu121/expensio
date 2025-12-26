@@ -4,6 +4,26 @@ body {
   background-color: #0F0F0F;
   color: #FFFFFF;
 }
+.auth-buttons {
+  display: flex;
+  gap: 16px; /* space between buttons */
+}
+.logo-container {
+  position: fixed; /* stays on top left even when scrolling */
+  top: 5px;
+  left: 10px;
+}
+
+.logo {
+ 
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
 
 .gold {
   color: #B8962E;
@@ -12,11 +32,12 @@ body {
   background-color: #D4AF37; 
   color: #0F0F0F; 
   border: none;
+  font-weight: bold;
   padding: 12px 20px;
   cursor: pointer;
     border-radius: 6px;
-
-  transition: all 0.1s ease; 
+transition: all 0.3s ease;
+  animation: fadeInUp 0.6s forwards;
 }
 
 .button-gold:hover {
@@ -51,7 +72,16 @@ body {
 .form-group {
   margin-bottom: 20px;
   text-align: left;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
 }
+
+.form-group:nth-child(1) { animation-delay: 0.2s; }
+.form-group:nth-child(2) { animation-delay: 0.3s; }
+.form-group:nth-child(3) { animation-delay: 0.4s; }
+.form-group:nth-child(4) { animation-delay: 0.5s; }
+.form-group:nth-child(5) { animation-delay: 0.6s; }
+.form-group:nth-child(6) { animation-delay: 0.7s; }
 
 .form-label {
   display: block;
@@ -73,7 +103,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.form-input:focus {
+.form-input:focus,.form-input:hover {
   border: 1px solid #D4AF37;
   box-shadow: 0 0 8px #D4AF37;
 }
@@ -89,6 +119,25 @@ body {
 }
 
 .login-btn:hover {
-  box-shadow: 0 0 15px 3px #FFFFFF;
+  box-shadow: 0 0 5px 1px #FFFFFF; /* white glow shadow */
   transform: scale(1.05);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

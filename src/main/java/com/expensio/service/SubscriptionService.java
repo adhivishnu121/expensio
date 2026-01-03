@@ -22,6 +22,9 @@ public class SubscriptionService {
     public Subscription save(Subscription sub) {
         return repo.save(sub);
     }
+    public void deleteById(Long id) {
+        repo.deleteById(id);
+    }
 
     public Subscription update(Long id, Subscription updated) {
         Subscription existing = repo.findById(id)

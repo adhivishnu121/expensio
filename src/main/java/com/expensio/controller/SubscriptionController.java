@@ -5,6 +5,7 @@ import com.expensio.model.User;
 import com.expensio.repository.UserRepository;
 import com.expensio.service.SubscriptionService;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.util.List;
 @RestController
@@ -37,4 +38,9 @@ public class SubscriptionController {
     public Subscription update(@PathVariable Long id, @RequestBody Subscription sub) {
         return service.update(id, sub);
     }
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        service.deleteById(id);
+    }
+
 }

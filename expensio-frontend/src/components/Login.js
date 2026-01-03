@@ -14,10 +14,11 @@ function Login() {
     axios.post('http://localhost:8080/api/users/login', { email, password })
   .then(response => {
     const data = response.data;
-    localStorage.setItem('token', data.token); // store JWT
+localStorage.setItem("token", response.data.token);
+localStorage.setItem("email", response.data.email);
     localStorage.setItem('firstName', data.firstName);
     alert(`Login Successful!\nWelcome ${data.firstName}`);
-    navigate('/expenses');
+    navigate('/Dashboard');
   })
 
 .catch(error => {

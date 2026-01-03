@@ -1,0 +1,64 @@
+import React from 'react';
+import '../styles/theme.css'; // Make sure your CSS file is imported
+import ukTaxIcon from '../assets/taxes.png';
+import savingsCalcIcon from '../assets/piggy-bank.png';
+import expensesSorterIcon from '../assets/spending.png';
+import savingsGoalsIcon from '../assets/saving.png';
+import subscriptionsIcon from '../assets/calendar.png';
+import { useNavigate} from 'react-router-dom';
+
+function Dashboard() {
+	  const navigate = useNavigate();
+
+  return (
+    <div className="dashboard-container">
+      <h1 className="dashboard-title">Welcome to £xpensio</h1>
+      <div className="dashboard-cards">
+
+        {/* UK Tax Calculator */}
+        <div className="card">
+          <img src={ukTaxIcon} alt="UK Tax Calculator" className="card-icon" />
+          <h3>UK Tax Calculator</h3>
+          <p>Quickly estimate your UK taxes here.</p>
+          <button className="button-gold ">Go</button>
+        </div>
+
+        {/* Savings Goal Calculator */}
+        <div className="card">
+          <img src={savingsCalcIcon} alt="Savings Goal Calculator" className="card-icon" />
+          <h3>Savings Goal Calculator</h3>
+          <p>Calculate how much you need to save.</p>
+          <button className="button-gold ">Calculate</button>
+        </div>
+
+        {/* Expenses Sorter */}
+        <div className="card">
+          <img src={expensesSorterIcon} alt="Expenses Sorter" className="card-icon" />
+          <h3>Expenses Sorter</h3>
+          <p>Organize your expenses by category.</p>
+          <button className="button-gold ">Sort</button>
+        </div>
+
+        {/* Savings Goals */}
+        <div className="card">
+          <img src={savingsGoalsIcon} alt="Savings Goals" className="card-icon" />
+          <h3>Savings Goals</h3>
+          <p>Track your savings progress here.</p>
+          <button className="button-gold ">View</button>
+        </div>
+
+        {/* Monthly Subscriptions */}
+        <div className="card">
+          <img src={subscriptionsIcon} alt="Monthly Subscriptions" className="card-icon" />
+          <h3>Monthly Subscriptions</h3>
+          <p>Manage all your monthly subscriptions.</p>
+          <button onClick={() => navigate("/subscriptions")}
+className="button-gold ">Manage </button>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+export default Dashboard;

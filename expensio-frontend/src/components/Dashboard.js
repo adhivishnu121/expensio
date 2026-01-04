@@ -9,10 +9,11 @@ import { useNavigate} from 'react-router-dom';
 
 function Dashboard() {
 	  const navigate = useNavigate();
+  const firstName = localStorage.getItem("firstName") || "User";
 
   return (
     <div className="dashboard-container">
-      <h1 className="dashboard-title">Welcome to £xpensio</h1>
+      <h1 className="dashboard-title">Welcome to £xpensio, {firstName}</h1>
       <div className="dashboard-cards">
 
         {/* UK Tax Calculator */}
@@ -20,8 +21,9 @@ function Dashboard() {
           <img src={ukTaxIcon} alt="UK Tax Calculator" className="card-icon" />
           <h3>UK Tax Calculator</h3>
           <p>Quickly estimate your UK taxes here.</p>
-          <button className="button-gold ">Go</button>
-        </div>
+<button className="button-gold" onClick={() => navigate("/tax-calculator")}>
+  Go
+</button>        </div>
 
         {/* Savings Goal Calculator */}
         <div className="card">

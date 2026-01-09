@@ -50,7 +50,7 @@ Manage all your recurring monthly subscriptions in one place for better budgetin
 
 1️⃣ Clone the repository
 
-git clone https://github.com/your-username/expensio.git
+git clone https://github.com/adhivishnu121/expensio.git
 
 cd expensio
 

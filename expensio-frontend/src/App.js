@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ExpensesSorter from './cards/ExpensesSorter';
 import SavingsCalculator from './cards/SavingsCalculator';
 import SavingsGoalCalculator from './cards/SavingsGoalCalculator';
+import Features from './components/Features';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 		<Route path="/expenses-sorter" element={<ExpensesSorter />} />
 		<Route path="/savings-calculator" element={<SavingsCalculator />} />
 		<Route path="/savings-goal-calculator" element={<SavingsGoalCalculator />} />
+        <Route path="/features" element={<Features />} />
 
       </Routes>   <ToastContainer
         position="top-right"

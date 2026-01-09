@@ -1,14 +1,10 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('//expensio-frontend/src/assets/wallpaper.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  background-color: #0F0F0F;
+  color: #FFFFFF;
+  
 }
-
-
 .main-content {
     padding-top: 80px; /* adjust to navbar height + some spacing */
 }

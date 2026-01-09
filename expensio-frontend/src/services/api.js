@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/users";
+// Railway backend URL
+const API_URL = "https://expensio-production.up.railway.app/api/users";
 
 export const registerUser = (user) => {
     return axios.post(`${API_URL}/register`, user);

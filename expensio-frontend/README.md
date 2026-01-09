@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 💰 £xpensio – Smart Finance & Savings App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+£xpensio is a modern, mobile-friendly web app that helps users manage their finances, calculate taxes, track expenses, and set savings goals efficiently. With an intuitive interface, £xpensio makes financial planning simple and accessible.
+## 🛠 Tech Stack
+## Frontend
 
-## Available Scripts
+HTML5
 
-In the project directory, you can run:
+CSS3
 
-### `npm start`
+JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ReactJS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Backend
 
-### `npm test`
+Java
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Spring Boot
 
-### `npm run build`
+REST APIs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Database
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MySQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Core Features
 
-### `npm run eject`
+Welcome Dashboard
+A personalized welcome screen greeting the user and giving easy access to all features.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+UK Tax Calculator
+Quickly estimate your UK taxes with a simple and intuitive interface. Helps users plan finances better.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Savings Goal Calculator
+Calculate how much you need to save regularly to reach your financial goals.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Expenses Sorter
+Organize your expenses by category to track spending habits and identify areas to save.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Monthly Subscriptions Manager
+Manage all your recurring monthly subscriptions in one place for better budgeting.
 
-## Learn More
+## ⚙️ Setup & Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1️⃣ Clone the repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git clone https://github.com/your-username/expensio.git
+cd expensio
 
-### Code Splitting
+2️⃣ Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+cd frontend
 
-### Analyzing the Bundle Size
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Runs on: http://localhost:3000
 
-### Advanced Configuration
+3️⃣ Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+cd backend
 
-### Deployment
+mvn clean install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+mvn spring-boot:run
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Runs on: http://localhost:8080
+
+## 🧮 How £xpensio Works
+
+UK Tax Calculator: Enter income and get instant tax estimates.
+
+Savings Goal Calculator: Input target amount and time frame to see required regular savings.
+
+Expenses Sorter: Add expenses and categorize them for easy tracking.
+
+Monthly Subscriptions: Manage and monitor recurring subscriptions.
+
+Savings Goals View: Track your progress and visualize goals with a progress bar.
+
+## 🎨 UI Design
+
+Minimal, modern design
+
+Dark theme with Black background
+
+Mobile-first, responsive layout
+
+Easy-to-read typography and clear buttons
+
+## 🔒 Future Enhancements
+
+User Authentication & Profiles
+
+Advanced Expense Analytics & Charts
+
+Notifications for subscriptions & savings goals
+
+Light/Dark Theme Toggle
+
+Cloud Deployment
+
+# 👨‍💻 Author
+
+Adhivishnu Ganipineni
+
+🎓 MSc Advanced Computer Science
+
+💼 Junior Full Stack Developer
+
+LinkedIn: Adhivishnu Ganipineni
+
+Email: adhivishnu121@gmail.com
+
+## 📜 License
+
+This project is for educational and portfolio purposes.

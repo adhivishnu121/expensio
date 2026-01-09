@@ -26,24 +26,24 @@ MySQL
 
 ## 🚀 Core Features
 
-**Welcome Dashboard
-**
+**Welcome Dashboard:**
+
 A personalized welcome screen greeting the user and giving easy access to all features.
 
-**UK Tax Calculator
-**
+**UK Tax Calculator:**
+
 Quickly estimate your UK taxes with a simple and intuitive interface. Helps users plan finances better.
 
-**Savings Goal Calculator
-**
+**Savings Goal Calculator:**
+
 Calculate how much you need to save regularly to reach your financial goals.
 
-**Expenses Sorter
-**
+**Expenses Sorter:**
+
 Organize your expenses by category to track spending habits and identify areas to save.
 
-**Monthly Subscriptions Manager
-**
+**Monthly Subscriptions Manager:**
+
 Manage all your recurring monthly subscriptions in one place for better budgeting.
 
 ## ⚙️ Setup & Installation

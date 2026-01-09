@@ -113,7 +113,7 @@ function ExpensesSorter() {
 
       {/* CSV Upload */}
       <div className="subscription-total" style={{ marginBottom: "30px" }}>
-        <h3>Upload CSV</h3>
+        <h3>Upload your expense statement</h3>
         <input type="file" accept=".csv" onChange={handleFileChange} />
         <button className="button-gold" onClick={uploadCsv} style={{ marginLeft: "10px" }}>Upload</button>
       </div>

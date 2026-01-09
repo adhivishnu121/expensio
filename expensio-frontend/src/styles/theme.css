@@ -1,9 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0F0F0F;
-  color: #FFFFFF;
+  background-image: url('//expensio-frontend/src/assets/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
+
+
 .main-content {
     padding-top: 80px; /* adjust to navbar height + some spacing */
 }
@@ -232,7 +237,7 @@ transition: all 0.3s ease;
 
 .subscription-total {
   margin-top: 40px;
-  padding: 25px;
+  padding: 40px;
   text-align: center;
   border-radius: 15px;
   background: #1A1A1A;
@@ -259,5 +264,75 @@ transition: all 0.3s ease;
   max-height: 300px;  /* keeps chart from being huge */
   width: 100% !important;
   height: auto !important;
+}
+.results-card {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #151515;
+}
+
+.results-card h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.muted-text {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.result-block {
+  margin-bottom: 18px;
+}
+
+.result-label {
+  display: block;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.result-value {
+  display: block;
+  color: #D4AF37;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.result-sub {
+  color: #888888;
+  font-size: 14px;
+}
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #222;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #d4af37, #f5e28a);
+  border-radius: 10px;
+}
+select.form-input {
+  appearance: none;
+  background-color: #111;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-group {
+    flex-direction: column;
+  }
+
+  .result-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 

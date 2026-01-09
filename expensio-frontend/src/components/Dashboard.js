@@ -29,8 +29,8 @@ function Dashboard() {
         <div className="card">
           <img src={savingsCalcIcon} alt="Savings Goal Calculator" className="card-icon" />
           <h3>Savings Goal Calculator</h3>
-          <p>Calculate how much you need to save.</p>
-          <button className="button-gold ">Calculate</button>
+          <p>Want to see how much you need to save regularly?</p>
+          <button className="button-gold "onClick={()=> navigate("/savings-goal-calculator")}>Calculate</button>
         </div>
 
         {/* Expenses Sorter */}
@@ -38,15 +38,15 @@ function Dashboard() {
           <img src={expensesSorterIcon} alt="Expenses Sorter" className="card-icon" />
           <h3>Expenses Sorter</h3>
           <p>Organize your expenses by category.</p>
-          <button className="button-gold ">Sort</button>
+          <button className="button-gold "onClick={() => navigate("/expenses-sorter")}>Sort</button>
         </div>
 
-        {/* Savings Goals */}
+        {/* Savings Calculator */}
         <div className="card">
           <img src={savingsGoalsIcon} alt="Savings Goals" className="card-icon" />
-          <h3>Savings Goals</h3>
-          <p>Track your savings progress here.</p>
-          <button className="button-gold ">View</button>
+          <h3>Savings Calculator</h3>
+          <p>Want to save, but not sure how long it will take?</p>
+          <button className="button-gold "onClick={() => navigate("/savings-calculator")}>View</button>
         </div>
 
         {/* Monthly Subscriptions */}

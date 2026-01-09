@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/theme.css';
+import { toast } from 'react-toastify';
 
 function Register() {
   const [firstName, setFirstName] = useState('');
@@ -22,13 +23,13 @@ function Register() {
       password
     })
     .then(response => {
-      alert(`Registration Successful!\nWelcome ${firstName}`);
+      toast.success(`Registration Successful!\nPlease Login first!`);
       navigate('/login');
     })
     .catch(error => {
       // Fix for [object Object] issue
       const msg = error.response?.data?.error || error.message;
-      alert(`Registration Failed: ${msg}`);
+      toast.error(`Registration Failed: ${msg}`);
     });
   };
 

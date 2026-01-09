@@ -113,6 +113,7 @@ Cloud Deployment
 ## 🖼 Screenshots
 
 1️⃣ Home Page
+<img width="1902" height="907" alt="image" src="https://github.com/user-attachments/assets/b6a06b0a-2027-4549-94da-e44e0abb4205" />
 
 2️⃣ Welcome Dashboard
 <img width="1899" height="901" alt="image" src="https://github.com/user-attachments/assets/4c8d0bcb-33ea-4071-a709-1270449b364a" />
@@ -125,8 +126,10 @@ Cloud Deployment
 <img width="1913" height="883" alt="image" src="https://github.com/user-attachments/assets/9e14a810-3c2a-4416-bfa1-dfe32caf6c11" />
 
 5️⃣ Expenses Sorter
+<img width="1901" height="900" alt="image" src="https://github.com/user-attachments/assets/1463a996-082c-459d-b25d-7b6ab23db295" />
 
 6️⃣ Monthly Subscriptions
+<img width="1903" height="900" alt="image" src="https://github.com/user-attachments/assets/fee92d1a-26a1-41e4-8fb3-a324c4dea80b" />
 
 # 👨‍💻 Author
 
@@ -136,7 +139,7 @@ Cloud Deployment
 
 💼 Junior Full Stack Developer
 
-LinkedIn: Adhivishnu Ganipineni
+LinkedIn: www.linkedin.com/in/adhivishnu121
 
 Email: adhivishnu121@gmail.com
 

@@ -14,7 +14,7 @@ function MonthlySubscriptions() {
 
   // Fetch subscriptions
   useEffect(() => {
-    axios.get("http://localhost:8080/api/subscriptions", { params: { email } })
+    axios.get("https://expensio-production.up.railway.app/api/subscriptions", { params: { email } })
       .then(res => {
         setSubs(res.data);
         calculateTotal(res.data);
@@ -30,7 +30,7 @@ function MonthlySubscriptions() {
 
   // Save edited subscription
   const saveEdit = () => {
-    axios.put(`http://localhost:8080/api/subscriptions/${editSub.id}`, editSub)
+    axios.put(`https://expensio-production.up.railway.app/api/subscriptions/${editSub.id}`, editSub)
       .then(res => {
         const updatedSubs = subs.map(s => s.id === editSub.id ? res.data : s);
         setSubs(updatedSubs);
@@ -43,7 +43,7 @@ function MonthlySubscriptions() {
 
   // Add new subscription
   const addSubscription = () => {
-    axios.post("http://localhost:8080/api/subscriptions", newSub, { params: { email } })
+    axios.post("https://expensio-production.up.railway.app/api/subscriptions", newSub, { params: { email } })
       .then(res => {
         const updatedSubs = [...subs, res.data];
         setSubs(updatedSubs);
@@ -56,7 +56,7 @@ function MonthlySubscriptions() {
 
   // Remove subscription
   const removeSubscription = (id) => {
-    axios.delete(`http://localhost:8080/api/subscriptions/${id}`)
+    axios.delete(`https://expensio-production.up.railway.app/api/subscriptions/${id}`)
       .then(() => {
         const updatedSubs = subs.filter(sub => sub.id !== id);
         setSubs(updatedSubs);

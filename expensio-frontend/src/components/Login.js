@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:8080/api/users/login', { email, password })
+    axios.post('https://expensio-production.up.railway.app/api/users/login', { email, password })
       .then(response => {
         const data = response.data;
 

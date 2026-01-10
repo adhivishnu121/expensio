@@ -29,7 +29,7 @@ function ExpensesSorter() {
   }, [email]);
 
   const fetchExpenses = () => {
-    axios.get("http://localhost:8080/api/expenses", { params: { email } })
+    axios.get("https://expensio-production.up.railway.app/api/expenses", { params: { email } })
       .then(res => {
         setExpenses(res.data);
         calculateCategoryTotals(res.data);
@@ -91,7 +91,7 @@ function ExpensesSorter() {
 
       // Send each parsed expense to backend
       const requests = parsedExpenses.map(exp =>
-        axios.post("http://localhost:8080/api/expenses", exp, { params: { email } })
+        axios.post("https://expensio-production.up.railway.app/api/expenses", exp, { params: { email } })
       );
 
       Promise.all(requests)

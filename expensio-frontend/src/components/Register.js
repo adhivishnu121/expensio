@@ -15,7 +15,7 @@ function Register() {
   const handleRegister = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:8080/api/users/register', {
+    axios.post('https://expensio-production.up.railway.app/api/users/register', {
       firstName,
       lastName,
       phone,
